@@ -59,3 +59,53 @@ The results are also that these three variables are very significant for the mod
 By calculating the corresponding accuracy and MAPE based on the prediction results matrix of 3 variables and 15 variables of in sample and out sample respectively, it can be found that the prediction accuracy of outsampe has slightly decreased, but the overall accuracy can still be maintained to 70% , MAPE values of 3 variables have obvious advantages.
 So next I would like to first analyze and explore the price and the past housing rental status of merchants.
 
+## 4.	Price VS Status
+*Figure 2: Price distribution*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure2.png)
+
+As shown in the figure, the frequency histogram of the house price in New York in April 2015 and its density curve show that most of the house prices in this month are concentrated between $110 and $200 (About 70% of the price).
+
+*Figure 3: Status Forecast of Price Changes Based on Logistic Model*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure3.png)
+
+When the state of other variables is set to the sample mean, the probability of Stauts being Block is shown in the figure, which is very close to the linear function. Obviously, the probability of the occurrence of Block state is significantly positively correlated with Price.
+
+*Figure 4: Price distribution of Different Status*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure4.png)
+
+With a histogram plot and a violin plot we can definitely observe a couple of things about distribution of property prices of different property status in NYC. First, we can state that property in status A has the highest range of prices for the listings with $184 price as average observation, followed by status B with $180 per night, while the property status A has the enormous amount compared with other status. All status appeared to have very similar distributions. Status R is the cheapest of them all. This distribution and density of prices were indicate that is property in Status A has higher cost to live in, where property in Status R on other hand appears to have lower standards of living.
+
+## 5.	Time VS Status
+*Figure 5: The time series plot of blocked properties for each day in April*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure5.png)
+
+According to the time series distribution graph of the number of blocked properties per day in April, it can be seen that the change of blocked properties has a clear periodicity, and the interval between the periods is approximately one week. Looking at the whole of April, blocked properties generally showed a continuous increase trend, and reached the peak of the number of blocked properties on April 30th.
+
+*Figure 6: The number of properties to be blocked on each day of the week*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure6.png)
+According to a boxplot of the number of blocked properties for all properties in April corresponding to each day of the week, we can see that Tuesday and Thursday are relatively have more blocked properties, while Friday and Saturday have the least blocked properties.
+
+## 6.	Regional Difference
+Rental prices in different regions are not the same, so this may also affect the rental status of the house, so I will explore the rental status of the two places separately.
+
+*Figure 7：The density heat map of blocked properties locations*
+
+![image](https://github.com/Leo1998-Lu/Property-status-prediction/blob/master/Image/Figure7.png)
+
+The density heat map composed of blocked properties projected in latitude and longitude can be found that the red area in the figure is the high-density area of properties in the block state. This area has the most blocked state properties, and the number of blocked properties in yellow area are second only to the red area. It can be seen that the properties of the block state are relatively concentrated, and it seems to have a cluster effect.
+
+#### REFERENCES
+*Bolton, Gary, Ben Greiner, and Axel Ockenfels. 2013. “Engineering Trust: Reciprocity in the Production of Reputation Information,” Management Science, Vol. 59, No. 2, 265-285.*<br>
+*Card, David, Alexandre Mas. and Jesse Rothstein, 2008. “Tipping and the Dynamics of Segregation,” Quarterly Journal of Economics, Vol. 123, No. 1, 177-218.*<br>
+*Benjamin Edelman, Michael Luca. 2014. “Digital Discrimination:The Case of Airbnb.com,” Working Paper, 14-054.*<br>
+*Anderson, Simon P., and Victor A. Ginsburg. 1994. “Price Discrimination via Secondhand Markets.” European Economic Review, 38(1): 23–44.*<br>
+*Attanasio, Orazio. 2000. “Consumer Durables and Inertial Behavior: Estimation and Aggregation of (S,s) rules for Automobile Purchases.” Review of Economic Studies,67: 667–696.*<br>
+*Berry, Steven, James Levinsohn, and Ariel Pakes. 1995. “Automobile Prices in Market Equilibrium.” Econometrica, 63(4): 841–890*
+
+
+
