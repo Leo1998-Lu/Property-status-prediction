@@ -1,4 +1,3 @@
-#Zhixiang Lu 2019/11/19
 library(readr)
 april<- read_csv("ny_april_10009.csv")
 head(april,10)
